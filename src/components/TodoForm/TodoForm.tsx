@@ -1,4 +1,4 @@
-import { KeyboardEvent, KeyboardEventHandler, useContext, useState } from 'react';
+import { KeyboardEvent, useContext, useState } from 'react';
 import { TodoContext } from '../../contexts';
 import './TodoForm.css';
 

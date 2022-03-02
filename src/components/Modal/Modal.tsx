@@ -2,7 +2,7 @@ import ReactDOM from 'react-dom';
 import './Modal.css'
 
 
-const Modal = ({children}: HTMLFormElement) => {
+const Modal = ({children}: any) => {
   return ReactDOM.createPortal(
     <div className='ModalBackground'>
       {children}

@@ -22,8 +22,9 @@ const TodoProvider = (props: any) => {
   let searchedTodos = [];
 
 
-  // Check this works!
-  if (searchValue?.length >= 1) {
+  // Change logic to be Ts complaint!
+  // @ts-ignore
+  if (!searchValue.length >= 1) {
     searchedTodos = todos;
   } else {
     searchedTodos = todos.filter((todo: { text: string; }) => {
