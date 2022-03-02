@@ -1,6 +1,7 @@
 import { createContext, useState } from 'react';
 import { useLocalStorage } from '../../hooks';
 import { ITodoContext } from '../../types';
+import { v4 as uuidv4 } from "uuid";
 
 
 const TodoContext = createContext<ITodoContext>({} as ITodoContext);
@@ -37,7 +38,7 @@ const TodoProvider = (props: any) => {
   const addTodo = (text: string) => {
     const newTodos = [...todos];
     newTodos.push({
-      id: newTodos.length + 1,
+      id: uuidv4(),
       text,
       completed: false,
     });
