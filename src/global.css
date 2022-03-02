@@ -1,0 +1,29 @@
+:root {
+  /*FONTS*/
+  --ff-primary: 'Assistant', sans-serif;
+
+  /*SIZES*/
+  --p: 1.6rem;
+
+  /*COLORS*/
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-size: var(--p);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
