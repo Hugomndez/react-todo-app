@@ -25,7 +25,7 @@ const useLocalStorage = (itemName: string, initialValue: Array<Todo> = []) => {
       } catch (error) {
         setError(true);
       }
-    }, 3000);
+    }, 500);
   }, []);
 
   const saveItem = (newItem: Todo[]) => {
