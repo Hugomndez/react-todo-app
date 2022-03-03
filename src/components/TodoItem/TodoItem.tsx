@@ -1,4 +1,4 @@
-import { ImCheckboxChecked } from 'react-icons/im';
+import { ImCheckboxChecked, ImCheckboxUnchecked } from 'react-icons/im';
 import { MdDeleteForever } from 'react-icons/md';
 import './TodoItem.css';
 
@@ -11,7 +11,8 @@ const TodoItem = (props:any) => {
         }`}
         onClick={props.onComplete}
       >
-        <ImCheckboxChecked />
+        {!props.completed  && (<ImCheckboxUnchecked />)}
+        {props.completed  && (<ImCheckboxChecked />)}
       </span>
       <p
         className={`TodoItem-p ${
