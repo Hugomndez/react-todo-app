@@ -27,4 +27,11 @@ body {
   font-size: var(--p);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: grid;
+  place-items: center;
+}
+
+#root {
+  height: 100vh;
+  max-width: 450px;
 }
