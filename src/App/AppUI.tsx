@@ -8,9 +8,9 @@ import {
   CreateTodoButton,
   Modal,
   TodoForm,
-  TaskLoader,
   TaskError,
   EmptyTask,
+  TaskLoader,
 } from '../components';
 
 const AppUI = () => {
@@ -29,12 +29,12 @@ const AppUI = () => {
 
       <TodoSearch />
 
-      <TodoList>
+      <TodoList >
         {error && <TaskError />}
         {loading && new Array(3).fill(1).map((a, i) => <TaskLoader key={i} />)}
         {!loading && !searchedTodos.length && <EmptyTask />}
 
-        {searchedTodos.map(todo => (
+        {!loading && searchedTodos.map(todo => (
           <TodoItem
             key={todo.id}
             text={todo.text}

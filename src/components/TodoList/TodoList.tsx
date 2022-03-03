@@ -1,9 +1,14 @@
+import { useContext } from 'react';
+import { TodoContext } from '../../contexts';
 import './TodoList.css';
 
 const TodoList = (props:any) => {
+  const {
+    loading,
+  } = useContext(TodoContext);
   return (
     <section>
-      <ul>{props.children}</ul>
+      <ul className={`${loading ? 'center' : ''}`}>{props.children}</ul>
     </section>
   );
 };
