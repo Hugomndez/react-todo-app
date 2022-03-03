@@ -18,7 +18,7 @@ label {
 
 textarea {
   background-color: #f9fbfc;
-  border: 2px, solid #202329;
+  border: 1px, solid #202329;
   border-radius: 2px;
   box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.25);
   color: #1e1e1f;
@@ -32,12 +32,12 @@ textarea {
 
 textarea::placeholder {
   color: #a5a5a5;
-  font-family: 'Montserrat';
+  font-family: var(--ff-primary);
   font-weight: 400;
 }
 
 textarea:focus {
-  outline-color: #61dafa;
+  outline-color: var(--color-primary);
 }
 
 .TodoForm-buttonContainer {
@@ -58,11 +58,11 @@ textarea:focus {
   height: 48px;
   border-radius: 2px;
   border: none;
-  font-family: 'Montserrat';
+  font-family: var(--ff-primary);
 }
 
 .TodoForm-button-add {
-  background-color: #61dafa;
+  background-color: var(--color-primary);
   box-shadow: 0px 5px 25px rgba(97, 218, 250, 0.5);
 }
 
