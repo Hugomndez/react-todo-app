@@ -1,8 +1,5 @@
 name: auto-merge-dependabot-pr
-
-on:
-  pull_request:
-
+on: pull_request
 jobs:
   auto-merge:
     - name: Merge
