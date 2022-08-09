@@ -1,7 +1,32 @@
 {
   "name": "todo-app",
+  "description": "React-Typescript To Do APP",
+  "author": {
+    "name": "Hugo Méndez",
+    "url": "https://hugomendez.dev"
+  },
   "version": "0.1.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hugomndez/react-todo-app"
+  },
+  "bugs": {
+    "url": "https://github.com/Hugomndez/react-todo-app/issues"
+  },
+  "homepage": "https://react-todo-app-9yg.pages.dev/",
+  "browserslist": {
+    "production": [
+      "last 3 chrome version",
+      "last 3 firefox version",
+      "last 3 safari version"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
@@ -29,18 +54,6 @@
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      "last 3 chrome version",
-      "last 3 firefox version",
-      "last 3 safari version"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
     ]
   }
 }
