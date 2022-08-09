@@ -1,4 +1,6 @@
-on: pull_request
+name: auto-merge-dependabot-pr
+'on':
+  pull_request: null
 jobs:
   auto-merge:
     - name: Merge
